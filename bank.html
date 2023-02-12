@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank-details</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-6 mb-7">
+        Let Your Bank Details
+        <span class="font-semibold text-violet-600">Borolox Bank !!!</span>
+      </h1>
+    </header>
+
+    <main>
+
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-6 text-white">
+          <div class="bg-green-600 p-8 rounded-xl">
+            <h4 class="text-2xl">Deposit</h4>
+            <h2  class="text-5xl">$<span id="deposit-count">00</span></h2>
+          </div>
+          <div class="bg-amber-400 p-8 rounded-xl">
+            <h4 class="text-2xl">Withdraw</h4>
+            <h2  class="text-5xl">$<span id="Withdraw-count">00</span> </h2>
+          </div>
+          <div class="bg-purple-500 p-8 rounded-xl">
+            <h4 class="text-2xl">Balance</h4>
+            <h2 id="main-balance" class="text-5xl">$<span id="balance-total">100</span> </h2>
+          </div>
+        </div>
+      </section>
+
+<!-- deposite and widthdraw -->
+
+      <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-6 ">
+          <div class="bg-emerald-400 p-8 rounded-xl">
+            <h4 class="text-2xl mb-4 text-white">Please Deposit</h4>
+            <input
+            class="w-6/12 block mb-2 px-5"
+            type="number"
+            name=""
+            id="diposit-field"
+            placeholder="$ Amount You want to deposite"
+          />
+         
+          <button
+            id="diposit"
+            class="bg-amber-400 p-2 px-5 text-white rounded mt-5 hover:bg-sky-700"
+          >
+            Diposit
+          </button>
+            
+
+          </div>
+          <div class="bg-pink-300 p-8 rounded-xl">
+            <h4 class="text-2xl mb-4 text-white">Please Withdraw</h4>
+            <input
+            class="w-6/12 block mb-2 px-5"
+            type="number"
+            name=""
+            id="withdraw-field"
+            placeholder="$ Amount You want to Withdraw"
+          />
+         
+          <button
+            id="withdraw"
+            class="bg-amber-400 p-2 px-5 text-white rounded mt-5 hover:bg-sky-700"
+          >
+            widthdraw
+          </button>
+
+          </div>
+         
+        </div>
+      </section>
+    </main>
+
+
+
+    <script src="js/bank.js"></script>
+    <script src="js/withdraw.js"></script>
+  </body>
+</html>
